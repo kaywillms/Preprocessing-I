@@ -1,1 +1,309 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.radius {
+  border-radius: 15%;
+  color: black;
+}
+html {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  background: #e6e4e4;
+}
+html p {
+  font-size: 2rem;
+  margin: 1%;
+}
+html h1 {
+  font-size: 4.5rem;
+  margin-bottom: 5%;
+}
+html h2 {
+  font-size: 3.1rem;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+nav {
+  background-color: #333;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  border-right: 1px solid #bbb;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+nav ul li a:hover {
+  background-color: #4caf50;
+}
+#page-name {
+  background: white;
+  margin: 3% 20% 10% 20%;
+  border-radius: 15%;
+  color: black;
+  box-shadow: 5px 8px 6px 8px #c2c1c1;
+}
+#page-name .image {
+  width: 50%;
+  height: 50%;
+  border-radius: 15%;
+  color: black;
+  margin-bottom: 5%;
+}
+#page-name .inner {
+  padding: 15%;
+  text-align: center;
+}
+#page-name .inner button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  box-shadow: 0 9px #999;
+  margin-top: 2%;
+}
+#page-name .inner button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+#page-name .inner button:hover {
+  background-color: #4caf50;
+}
+#page-name .inner button:active {
+  background-color: #4caf50;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .spotlight .inner {
+    margin-bottom: 20%;
+  }
+  .main .spotlight2 .inner2 {
+    margin-left: 25%;
+  }
+}
+.main .spotlight {
+  margin: 0 15% 0 20%;
+  text-align: center;
+}
+.main .spotlight2 {
+  margin: 0 22% 0 0;
+  text-align: center;
+}
+.main .spotlight2 .stack {
+  font-size: 4.5rem;
+  background: whitesmoke;
+  text-align: center;
+}
+.main .spotlight2 .stack .st {
+  border: solid black 2px;
+  border-radius: 10px;
+}
+.main .spotlight2 .stack .js {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 70%;
+  margin: 10% 0 5% 15%;
+}
+table h2 {
+  text-align: center;
+}
+table td {
+  border: 1px solid #0a0a0a;
+  padding: 8%;
+  font-size: 2rem;
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #0a0a0a;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:hover {
+  background-color: #ddd;
+}
+footer {
+  background-color: #0a0a0a;
+  padding: 2% 0;
+  color: whitesmoke;
+  text-align: center;
+}
